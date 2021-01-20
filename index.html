@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        
+
+</head>
+
+<body>
+
+    <span id="container">
+        <input id="txtEmail" type="email" placeholder="Email">
+
+        <input id="txtPassword" type="password" placeholder="Password">
+
+        <button id="btnLogin" class="btn btn-action">
+            log in
+        </button>
+
+        <button id="btnSignUp" class="btn btn-secondary">
+            Sign Up
+        </button>
+
+        <button id="btnLogout" class="btn btn-action" hidden="true">
+            Log out
+        </button>
+    </span>
+
+    <span id="whenSignedOut">
+        <button id="signInBtn">구글로 로그인</button>
+    </span>
+
+    <span id="whenSignedIn" hidden="true">
+        <div id="userDetails"></div>
+        <button id="signOutBtn">Log out</button>
+    </span>
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
